@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "26f65975-56b4-4a14-9c4e-1a4835b262e1",
+		"name": "Express TS Router",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Static Files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/udacity.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"udacity.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Welcome Query Params",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/welcome?name=Mahmoud",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"welcome"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mahmoud"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Welcome URL Params",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/welcome/Mahmoud Kassem/32",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"welcome",
+						"Mahmoud Kassem",
+						"32"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Welcome Body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mahmoud Kassem\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/welcome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
